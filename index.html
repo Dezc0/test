@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Feliz Cumpleaños </title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="http://drive.google.com/uc?export=view&id=1H-hsHCEieoMW3ul2GRk0ntP8cgYIBUn3" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<header>
+    <div class="navbar">
+        <div class="logo"> <a href="#"> <img src="http://drive.google.com/uc?export=view&id=1H-hsHCEieoMW3ul2GRk0ntP8cgYIBUn3" alt="" height="60px"> </a></div>
+        <ul class="links">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="pages/Aboutyou.html"> Sobre Ti </a></li>
+            <li><a href="/pages/More.html"> More </a></li>
+        </ul>
+        <a href="#" class="action_btn"></a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="menu">
+        <li><a href="index.html"> Home </a></li>
+            <li><a href="pages/Aboutyou.html"> Sobre ti </a></li>
+            <li><a href="More"> More </a></li>
+    </div>
+</header>
+
+<main>
+    <section id="hero">
+        <h1> Como estas??? </h1>
+        <h3> No es mucho lo que puedo decirte, realmente no tengo palabras para expresar lo mucho que te aprecio </h3>
+        <img src="http://drive.google.com/uc?export=view&id=1qGOfHwKFrf1JQZe0vlIJwJCsyzgmxJHN" alt="Eris" class="Eris">
+    </section>
+</main>
+
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const menu = document.querySelector('.menu')
+
+    toggleBtn.onclick = function(){
+        menu.classList.toggle('open')
+        const isOpen = menu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+<body>
+
+    
+</body>
+</html>

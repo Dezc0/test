@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document </title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="http://drive.google.com/uc?export=view&id=1H-hsHCEieoMW3ul2GRk0ntP8cgYIBUn3" type="image/x-icon">
+</head>
+
+<header>
+    <div class="navbar">
+        <div class="logo"> <a href="#"> <img src="http://drive.google.com/uc?export=view&id=1H-hsHCEieoMW3ul2GRk0ntP8cgYIBUn3" alt="" height="50px"> </a></div>
+        <ul class="links">
+            <li><a href="../index.html"> Home </a></li>
+            <li><a href="./Aboutyou.html"> Sobre Ti </a></li>
+            <li><a href="#"> More </a></li>
+
+        </ul>
+        <a href="#" class="action_btn"></a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="menu">
+        <li><a href="../index.html"> Home </a></li>
+            <li><a href="./Aboutyou.html"> Sobre ti </a></li>
+            <li><a href="#"> More </a></li>
+    </div>
+</header>
+
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const menu = document.querySelector('.menu')
+
+    toggleBtn.onclick = function(){
+        menu.classList.toggle('open')
+        const isOpen = menu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+
+<main>
+    <div class="card">
+      <img src="http://drive.google.com/uc?export=view&id=1T_p08eP6atqpkMLVPLIGsLXoKmJfmMhz" alt="birthday" class="birthday">
+      <div class="text">
+        <h1>Happy Birthday!</h1>
+        <p> No se si puedas entender el valor de esto de mi parte para ti, solo quise hacer algo que fuera muy parte de mi para ti. <br> 
+            Deseo de todo corazon que este dia se vuelva muy especial y compartas mucho <br>
+            y que no olvides que siempre te tengo en cuenta en demasiados aspectos, <br>
+            Solo queda agradecerte por haber compartido tanto tiempo conmigo. <br>
+            y tambien deseo que podamos continuar compartido de aqui en adelante. </p>
+        <p>- Desco </p>
+        <div class="credit">Made with <span style="color:tomato">❤</span> by <a  href="https://www.learningrobo.com/"> Dani </a></div>
+        <img src="http://drive.google.com/uc?export=view&id=1YCxSzcqA5FLYPN0qjtEhECBKnjYa4luJ" alt="rino" height="200px">
+      </div>
+      <div class="space"></div>
+    </div>
+</main>
+
+<body>
+    
+</body>
+</html>
